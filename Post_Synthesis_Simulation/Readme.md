@@ -107,9 +107,7 @@ cd output/post_synth_sim/
 gtkwave post_synth_sim.vcd
 ```
 ---
-
-![iverilog](Post_Synthesis_Simulation/iverilog_sim.jpg)
-
+![iverilog](../Post_Synthesis_Simulation/iverilog_sim.jpg) 
 # Output of Post Synthesis Simulation
 
 ![Post_synthesis](Post_Synthesis_Simulation/post_sim_result.jpg)
