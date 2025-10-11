@@ -24,3 +24,7 @@ cmake -DCUDD_DIR=/usr/local ..
 make -j$(nproc)
 ```
 For more detailed instructions, please refer to the [OpenSTA GitHub Repository](https://github.com/The-OpenROAD-Project/OpenSTA)
+
+---
+
+# The Timing Graphs of various synthesized netlists have been generated and submitted in the same folder
