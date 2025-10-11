@@ -1,0 +1,59 @@
+Warning: test.tcl line 1, unknown field nets.
+Startpoint: sel[1] (input port clocked by clk)
+Endpoint: y (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                   0.000    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                            2.000    2.000 ^ input external delay
+     2    0.004    0.000    0.000    2.000 ^ sel[1] (in)
+                   0.000    0.000    2.000 ^ _16_/A1 (sky130_fd_sc_hd__o21ai_0)
+     1    0.000    0.021    0.035    2.035 v _16_/Y (sky130_fd_sc_hd__o21ai_0)
+                   0.021    0.000    2.035 v y (out)
+                                     2.035   data arrival time
+
+                   0.000    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                            0.000    0.000   clock reconvergence pessimism
+                           -2.000   -2.000   output external delay
+                                    -2.000   data required time
+---------------------------------------------------------------------------------
+                                    -2.000   data required time
+                                    -2.035   data arrival time
+---------------------------------------------------------------------------------
+                                     4.035   slack (MET)
+
+
+Startpoint: sel[0] (input port clocked by clk)
+Endpoint: y (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                   0.000    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                            2.000    2.000 ^ input external delay
+     1    0.005    0.000    0.000    2.000 ^ sel[0] (in)
+                   0.000    0.000    2.000 ^ _14_/S (sky130_fd_sc_hd__mux2i_1)
+     1    0.002    0.095    0.136    2.136 ^ _14_/Y (sky130_fd_sc_hd__mux2i_1)
+                   0.095    0.000    2.136 ^ _16_/A2 (sky130_fd_sc_hd__o21ai_0)
+     1    0.000    0.024    0.052    2.188 v _16_/Y (sky130_fd_sc_hd__o21ai_0)
+                   0.024    0.000    2.188 v y (out)
+                                     2.188   data arrival time
+
+                   0.000   10.000   10.000   clock clk (rise edge)
+                            0.000   10.000   clock network delay (ideal)
+                            0.000   10.000   clock reconvergence pessimism
+                           -2.000    8.000   output external delay
+                                     8.000   data required time
+---------------------------------------------------------------------------------
+                                     8.000   data required time
+                                    -2.188   data arrival time
+---------------------------------------------------------------------------------
+                                     5.812   slack (MET)
+
+
