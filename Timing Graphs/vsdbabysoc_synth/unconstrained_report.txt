@@ -1,0 +1,17 @@
+Startpoint: core/_9211_ (rising edge-triggered flip-flop)
+Endpoint: core/_8584_ (rising edge-triggered flip-flop)
+Path Group: unconstrained
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00 ^ core/_9211_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   8.43    8.43 ^ core/_9211_/Q (sky130_fd_sc_hd__dfxtp_1)
+  -0.17    8.27 v core/_6592_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.30    8.56 ^ core/_6593_/Y (sky130_fd_sc_hd__nand2_1)
+   0.00    8.56 ^ core/_8584_/D (sky130_fd_sc_hd__dfxtp_1)
+           8.56   data arrival time
+---------------------------------------------------------
+(Path is unconstrained)
+
+

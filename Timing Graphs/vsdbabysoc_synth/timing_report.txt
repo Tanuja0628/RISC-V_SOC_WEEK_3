@@ -1,0 +1,2 @@
+Warning: opensta_script.tcl line 1, unknown field nets.
+No paths found.
